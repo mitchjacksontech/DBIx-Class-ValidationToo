@@ -55,14 +55,14 @@ For each column definition needing validation, define a validation attribute.
 Validates every column value currently stored in the $row object.
 Returns a hashref of error messages keyed on column name.
 
-\# Validate all data for all columns in object
-$err\_href = $row->validate()
-
-\# Validate a single column with a given value
-$err\_msg = $row->validate('column' => $value);
-
-\# Validate a hash of values
-$err\_href = $row->validate(\\%values);
+    # Validate all data for all columns in object
+    $err_href = $row->validate()
+    
+    # Validate a single column with a given value
+    $err_msg = $row->validate('column' => $value);
+    
+    # Validate a hash of values
+    $err_href = $row->validate(\%values);
 
 ## validate\_object
 
@@ -116,14 +116,14 @@ default values are shown here:
 
 Usage:
 
-my %params = (
-    FOLLOWING  => 4, # forbid abcd, or 2345
-    GROUPS     => 3, # forbid aaaa, or bbbb
-    MINLEN     => 8,
-    MAXLEN     => 64,
-    DICTIONARY => 1, # enable dictionary checking
-)
-my $error\_msg = $row->test\_password( $password, \\%params );
+    my %params = (
+      FOLLOWING  => 4, # forbid abcd, or 2345
+      GROUPS     => 3, # forbid aaaa, or bbbb
+      MINLEN     => 8,
+      MAXLEN     => 64,
+      DICTIONARY => 1, # enable dictionary checking
+    )
+    my $error_msg = $row->test_password( $password, \%params );
 
 # VALIDATION TYPES
 
