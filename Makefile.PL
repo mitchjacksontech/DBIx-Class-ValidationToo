@@ -16,7 +16,10 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "DBIx::Class::ValidationToo",
   "PREREQ_PM" => {
-    "DBIx::Class" => 0
+    "DBIx::Class" => 0,
+    "Data::Password" => 0,
+    "DateTime::Format::DateParse" => 0,
+    "Email::Valid" => 0
   },
   "VERSION" => "0.2",
   "test" => {
@@ -26,7 +29,10 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "DBIx::Class" => 0
+  "DBIx::Class" => 0,
+  "Data::Password" => 0,
+  "DateTime::Format::DateParse" => 0,
+  "Email::Valid" => 0
 );
 
 

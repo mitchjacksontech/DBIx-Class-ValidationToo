@@ -10,6 +10,7 @@ no warnings 'uninitialized';
 use Carp qw( carp );
 use Data::Password qw( :all $DICTIONARY );
 use DateTime::Format::DateParse;
+use Email::Valid;
 
 =head1 NAME
 
